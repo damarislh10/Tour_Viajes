@@ -2,6 +2,9 @@ import React from 'react'
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { BorrarCarrito } from '../redux/actions/actionCarrito';
+import "../styles/styleCarrito.css";
+
+
 export const ShoppingCart = () => {
     const { carrito } = useSelector((state) => state.carrito);
     const dispatch = useDispatch();
@@ -41,7 +44,7 @@ export const ShoppingCart = () => {
                   placeholder="Cantidad"
                 />
                 <Button
-                  className="btn btndelete"
+                  className="btn-danger btndelete"
                   onClick={() => handleDelete(product.id)}
                 >
                   Eliminar
@@ -54,6 +57,7 @@ export const ShoppingCart = () => {
           </Card.Body>
         </Card>
       ))}
+      <button>Comprar</button>
     </Container>
   </div>
   )

@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import { AddCarrito } from "../redux/actions/actionCarrito";
+import Swal from "sweetalert2";
+import "../styles/styleDetalle.css";
 
 export const Detail = () => {
   const { articles } = useSelector((state) => state.articles);
@@ -23,14 +25,8 @@ export const Detail = () => {
     <div>
       <Container className="container-detail my-5">
         <Row>
-          <Col xs={1} className="col-img">
-            <button className="mt-4">
-              <img
-                className="imgSecund"
-                src={detailProduct.imagen}
-                alt="img1"
-              />
-            </button>
+          <Col className="mt-5">
+
           </Col>
 
           <Col>
@@ -71,11 +67,16 @@ export const Detail = () => {
               <p className="car-price">$ {detailProduct.precio}</p>
 
               <button
-                className="btn-car w-100"
                 onClick={() => {
                   dispatch(AddCarrito(detailProduct));
-      
+                  Swal.fire({
+                    icon: "success",
+                    title: "Agregado con exito",
+                    showConfirmButton: true,
+                    timer: 1500,
+                  });
                 }}
+                className="btn-car w-100"
               >
                 <div className="container-imgCar ms-1 me-2">
                   <img

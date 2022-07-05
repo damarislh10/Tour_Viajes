@@ -1,0 +1,43 @@
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4% 0;
+}
+
+.link-card {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-product {
+  max-width: 95%;
+}
+
+.imgCard {
+  width: 405px !important;
+  height: 300px !important;
+  margin: auto;
+}
+
+.car-cont {
+  padding: 5%;
+}
+.body-article {
+  display: flex;
+  justify-content: space-between;
+}
+.nombre {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.preciotext {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-price {
+  display: flex;
+  justify-content: space-between;
+}
