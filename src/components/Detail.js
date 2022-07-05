@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { listArticlesAsync } from "../redux/actions/actionArticles";
 import { useDispatch, useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
+import ReactImageMagnify from "react-image-magnify";
 import { useNavigate, useParams } from "react-router-dom";
 import { AddCarrito } from "../redux/actions/actionCarrito";
 import Swal from "sweetalert2";
@@ -26,7 +27,20 @@ export const Detail = () => {
       <Container className="container-detail my-5">
         <Row>
           <Col className="mt-5">
-
+            <ReactImageMagnify
+              {...{
+                smallImage: {
+                  alt: "Wristwatch by Ted Baker London",
+                  isFluidWidth: true,
+                  src: detailProduct.imagen,
+                },
+                largeImage: {
+                  src: detailProduct.imagen,
+                  width: 1200,
+                  height: 2000,
+                },
+              }}
+            />
           </Col>
 
           <Col>
