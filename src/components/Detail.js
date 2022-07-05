@@ -3,6 +3,7 @@ import { listArticlesAsync } from "../redux/actions/actionArticles";
 import { useDispatch, useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
+import { AddCarrito } from "../redux/actions/actionCarrito";
 
 export const Detail = () => {
   const { articles } = useSelector((state) => state.articles);
@@ -69,7 +70,13 @@ export const Detail = () => {
             <div className="container-car mt-3">
               <p className="car-price">$ {detailProduct.precio}</p>
 
-              <button className="btn-car w-100">
+              <button
+                className="btn-car w-100"
+                onClick={() => {
+                  dispatch(AddCarrito(detailProduct));
+      
+                }}
+              >
                 <div className="container-imgCar ms-1 me-2">
                   <img
                     src="https://res.cloudinary.com/df90q7vvj/image/upload/v1646841839/amazonasApp/shopping-cart--v2_ezz0wb.png"
