@@ -64,8 +64,31 @@ export const Detail = () => {
               <span className="precio">$ {detailProduct.precio}</span>
               <span className="stylBlue">Detalles</span>
             </p>
-
             <hr />
+
+            <div className="container-car mt-3">
+              <p className="car-price">$ {detailProduct.precio}</p>
+
+              <button className="btn-car w-100">
+                <div className="container-imgCar ms-1 me-2">
+                  <img
+                    src="https://res.cloudinary.com/df90q7vvj/image/upload/v1646841839/amazonasApp/shopping-cart--v2_ezz0wb.png"
+                    alt="carImg"
+                  />
+                </div>
+                Agregar al carrito
+              </button>
+              <button className="btn-car w-100">
+                <div className="container-imgCar ms-1 me-2">
+                  <img
+                    src="https://res.cloudinary.com/df90q7vvj/image/upload/v1646841901/amazonasApp/circled-play_n9mvhu.png"
+                    alt="comprarImg"
+                  />
+                </div>
+                Comprar ahora
+              </button>
+              <p className="stylBlue text-center">Transaciòn segura</p>
+            </div>
           </Col>
         </Row>
       </Container>
