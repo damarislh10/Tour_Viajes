@@ -37,7 +37,7 @@ export const Detail = () => {
                 largeImage: {
                   src: detailProduct.imagen,
                   width: 1200,
-                  height: 2000,
+                  height: 1800,
                 },
               }}
             />
@@ -73,12 +73,26 @@ export const Detail = () => {
             <p>
               <span>Precio:</span>{" "}
               <span className="precio">$ {detailProduct.precio}</span>
-              <span className="stylBlue">Detalles</span>
             </p>
             <hr />
-
+            <ul>
+              <h3>Acerca de este articulo</h3>
+              {detailProduct.acerca_de != undefined
+                ? detailProduct.acerca_de.map((acerca, index) => (
+                    <li key={index} className="ms-4">
+                      {acerca}
+                    </li>
+                  ))
+                : ""}
+            </ul>
+          </Col>
+          <Col xs lg="2">
             <div className="container-car mt-3">
+              <h2 className="fs-5 fw-bold text-center">
+                ¡Reserva tu cupo ahora!
+              </h2>
               <p className="car-price">$ {detailProduct.precio}</p>
+              <hr />
 
               <button
                 onClick={() => {
