@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from "react-redux";
 import { TourApp } from './TourApp';
 import { store } from './redux/store/store';
