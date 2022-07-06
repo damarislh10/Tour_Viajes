@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { BorrarCarrito, vaciarCarrito } from "../redux/actions/actionCarrito";
+import { BorrarCarrito } from "../redux/actions/actionCarrito";
 import { useNavigate } from "react-router-dom";
 
 import "../styles/styleCarrito.css";
@@ -30,10 +30,10 @@ export const ShoppingCart = () => {
     let cont = 0;
     carrito.map((c) => (cont++, (subtotalS += c.precio)));
     setSubtotal({
-      price: subtotalS,
+      price: Intl.NumberFormat('es-DE').format(subtotalS),
       cant: cont,
     });
-  }, []);
+  }, [carrito]);
 
   return (
     <div className="pt-5" style={{ backgroundColor: "#EAEDED" }}>
@@ -67,7 +67,7 @@ export const ShoppingCart = () => {
                       </Button>
                     </Col>
                     <Col xs={3}>
-                      <h5>COP $ {product.precio}</h5>
+                      <h5>COP $ {Intl.NumberFormat('es-DE').format(product.precio)}</h5>
                     </Col>
                   </Row>
                 </Card.Body>

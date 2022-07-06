@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Articles } from "../components/Articles";
 import { listArticlesAsync } from "../redux/actions/actionArticles";
@@ -11,19 +11,17 @@ export const ToursContainer = () => {
 
   useEffect(() => {
     dispatch(listArticlesAsync());
-  }, []);
+  }, [dispatch]);
 
   return (
-    <Container fluid>
-      <Row className="my-5">
-        {articles.map((tour) => (
-          <Col key={tour.id}>
-            <Link className="link-card" to={`/article/${tour.id}`}>
-              <Articles tour={tour} />
-            </Link>
-          </Col>
-        ))}
-      </Row>
+    <Container fluid className="container-product">
+      <div className="card-columns">
+          {articles.map((tour) => (
+              <Link key={tour.id} className="link-card" to={`/article/${tour.id}`}>
+                <Articles tour={tour} />
+              </Link>
+          ))}
+      </div>
     </Container>
   );
 };

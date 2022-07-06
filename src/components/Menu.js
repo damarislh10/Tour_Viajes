@@ -27,9 +27,6 @@ export const Menu = () => {
                 <Nav.Link as={Link} to="/articles">
                   Tours
                 </Nav.Link>
-                <Nav.Link as={Link} to="/">
-                  Nosotros
-                </Nav.Link>
               </Nav>
             </Col>
             <Col>

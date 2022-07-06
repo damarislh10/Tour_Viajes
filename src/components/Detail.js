@@ -3,7 +3,7 @@ import { listArticlesAsync } from "../redux/actions/actionArticles";
 import { useDispatch, useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import ReactImageMagnify from "react-image-magnify";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { AddCarrito } from "../redux/actions/actionCarrito";
 import Swal from "sweetalert2";
 import "../styles/styleDetalle.css";
@@ -21,12 +21,12 @@ export const Detail = () => {
     if (filterProduct !== undefined) {
       setDetailProduct(filterProduct);
     }
-  }, []);
+  }, [articles, dispatch, id]);
   return (
     <div>
       <Container className="container-detail my-5">
         <Row>
-          <Col className="mt-5">
+          <Col className="imagenDetail">
             <ReactImageMagnify
               {...{
                 smallImage: {
@@ -73,12 +73,15 @@ export const Detail = () => {
             </h4>
             <p>
               <span>Precio:</span>{" "}
-              <span className="precio">$ {detailProduct.precio}</span>
+              <span className="precio">$ {Intl.NumberFormat('es-DE').format(detailProduct.precio)}</span>
             </p>
             <hr />
+            <p>
+              {detailProduct.descripcion}
+            </p>
             <ul>
               <h3>Acerca de este Tour</h3>
-              {detailProduct.acerca_de != undefined
+              {detailProduct.acerca_de !== undefined
                 ? detailProduct.acerca_de.map((acerca, index) => (
                     <li key={index} className="ms-4">
                       {acerca}
@@ -92,7 +95,7 @@ export const Detail = () => {
               <h2 className="fs-5 fw-bold text-center">
                 ¡Reserva tu cupo ahora!
               </h2>
-              <p className="car-price">$ {detailProduct.precio}</p>
+              <p className="car-price">$ {Intl.NumberFormat('es-DE').format(detailProduct.precio)}</p>
               <hr />
 
               <button

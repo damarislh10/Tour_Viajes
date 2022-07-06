@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 4% 0;
+}
+.fila_article {
+  margin: 0 1%;
 }
 
 .link-card {
@@ -15,14 +17,22 @@
 }
 
 .imgCard {
-  width: 405px !important;
-  height: 250px !important;
+  width: 360px;
+  height: 150px;
   margin: auto;
 }
-
-.car-cont {
-  padding: 5%;
+.parrafo_initial {
+  margin-top: 1%;
+  color: #6e6e6e;
+  line-height: 1.6em;
 }
+.container-price {
+  background-color: #174a6d;
+  padding: 2% 0;
+  color: #fff;
+  font-weight: bold;
+}
+
 .body-article {
   display: flex;
   justify-content: space-between;

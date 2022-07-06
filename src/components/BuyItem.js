@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import "../styles/styleBuyItem.css";
