@@ -8,8 +8,7 @@ import "../styles/styleMenu.css";
 export const Menu = () => {
   return (
     <div>
-      <Row style={{ width: "99.7vw" }}>
-        <Navbar bg="primary" variant="dark">
+        <Navbar className="navb" bg="primary" variant="dark">
           <Container>
             <Col className="col-nav">
               <Navbar.Brand as={Link} to="/">
@@ -48,7 +47,6 @@ export const Menu = () => {
             </Col>
           </Container>
         </Navbar>
-      </Row>
     </div>
   );
 };

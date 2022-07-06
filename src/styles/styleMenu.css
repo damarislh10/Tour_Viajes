@@ -1,13 +1,14 @@
-.car-icon{
-    float: right;
+.car-icon {
+  float: right;
 }
 
-.col-nav{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
+.col-nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.misViajes {
+  display: flex;
+}
 
-}
-.misViajes{
-    display: flex;
-}
+

@@ -19,10 +19,7 @@ export const Home = () => {
           <Carousel.Caption>
             <div className="agencia text1">
               <h2 className="titleslider">Agencia de Viajes en Colombia</h2>
-              <p className="text-slider">
-                travel es una de las mejores agencias de viajes de Colombia,
-                reconocida en el extranjero por organizar tours tipo trekking en
-                la Sierra Nevada de Santa Marta con guías indígenas. Nos
+              <p className="text-slider"> Nos
                 esforzamos siempre en destacar el ecoturismo y promover el
                 turismo indígena en Colombia.
               </p>
@@ -42,7 +39,7 @@ export const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 imagenSlider"
-            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657121074/tour_viajes/vistas-panor_C3_A1micas-los-jardines-de-huertos-campesinos-se-dividen-en-partes-marcadas-trozos-plantas-186355867_sq3x10.jpg"
+            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657135986/tour_viajes/imagenes-de-ciudad-perdida_d6d8rv.jpg"
             alt="Second slide"
           />
 
@@ -69,18 +66,18 @@ export const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 imagenSlider"
-            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657121187/tour_viajes/campesinos-y-cultivos-de-bayas-vista-panor_C3_A1mica-un-granjero-parado-en-campo-con-una-bolsa-llena-sobre-su-hombro-225288044_nkvwnm.jpg"
+            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657136048/tour_viajes/blog-de-viajes-ciudad-perdida_sy0r9f.jpg"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <div className="agencia">
+            <div className="agencia text1">
               <h2 className="titleslider">
-                GENTE CON LA QUE VIVIRÁS EXPERIENCIAS INOLVIDABLES
+                Gente con la que vivirás experiencias inolvidables
               </h2>
               <p className="text-slider">
-                AUNQUE LAS REGIONES DE COLOMBIA SON MUY DIVERSAS, EN TODAS
-                ENCONTRARÁS LA MISMA CALIDEZ QUE TE DA LA BIENVENIDA.
+                Aunque las regiones de Colombia son muy diversas, en todas
+                encontraras la misma calidez que te da la bienvenida.
               </p>
               <div>
                 <Link

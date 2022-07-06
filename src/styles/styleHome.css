@@ -15,15 +15,13 @@
 .agencia {
   background: #08020282 !important;
   padding: 20px;
-  margin-bottom: 40%;
   width: 50%;
   border: solid 1px #fff;
   border-radius: 20px;
   padding: 3%;
 }
-.text1 {
-  margin-bottom: 5%;
-}
+
+
 .text-slider {
   font-size: 20px;
   margin-bottom: 10%;
