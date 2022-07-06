@@ -76,7 +76,7 @@ export const Detail = () => {
             </p>
             <hr />
             <ul>
-              <h3>Acerca de este articulo</h3>
+              <h3>Acerca de este Tour</h3>
               {detailProduct.acerca_de != undefined
                 ? detailProduct.acerca_de.map((acerca, index) => (
                     <li key={index} className="ms-4">
