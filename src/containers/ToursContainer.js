@@ -15,7 +15,7 @@ export const ToursContainer = () => {
 
   return (
     <Container fluid>
-      <Row>
+      <Row className="my-5">
         {articles.map((tour) => (
           <Col key={tour.id}>
             <Link className="link-card" to={`/article/${tour.id}`}>

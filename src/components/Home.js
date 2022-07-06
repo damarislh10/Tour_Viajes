@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Title } from "./Title";
 import "../styles/styleHome.css";
+import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <div className="mb-5">
@@ -27,6 +28,8 @@ export const Home = () => {
               </p>
               <div>
                 <a
+                  as={Link}
+                  to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
@@ -52,6 +55,8 @@ export const Home = () => {
               </p>
               <div>
                 <a
+                  as={Link}
+                  to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
@@ -79,6 +84,8 @@ export const Home = () => {
               </p>
               <div>
                 <a
+                  as={Link}
+                  to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
