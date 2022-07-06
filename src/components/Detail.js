@@ -44,7 +44,8 @@ export const Detail = () => {
           </Col>
 
           <Col>
-            <h2 className="fs-5 fw-bold">{detailProduct.nombre}</h2>
+            <h2 className="fs-2 fw-bold">{detailProduct.nombre}</h2>
+            <h2 className="fs-5 fw-bold mb-3">{detailProduct.subtitulo}</h2>
 
             <h4 className="calificacion">
               <span>

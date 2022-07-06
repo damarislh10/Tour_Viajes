@@ -16,6 +16,10 @@ export const ShoppingCartReducer = (state = initialState, action) => {
         ...state,
         carrito: state.carrito.filter((p) => p.id !== action.payload),
       };
+    case typeCarrito.vaciar:
+      return {
+        carrito: [],
+      };
 
     default:
       return state;

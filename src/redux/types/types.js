@@ -4,6 +4,7 @@ export const typeArticles = {
   
   export const typeCarrito = {
     add: "[CAR] add",
-    delete: "[CAR] delete"
+    delete: "[CAR] delete",
+    vaciar: "[CAR] vaciar",
   };
   

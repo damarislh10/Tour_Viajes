@@ -11,13 +11,13 @@ export const Home = () => {
           <div className="header">
             <img
               className="d-block w-100 imagenSlider"
-              src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657041043/tour_viajes/Gallery-19_u9t1mk.jpg"
+              src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657120916/tour_viajes/tours-con-guias-indigenas_ojvtd3.jpg"
               alt="First slide"
             />
           </div>
 
           <Carousel.Caption>
-            <div className="agencia">
+            <div className="agencia text1">
               <h2 className="titleslider">Agencia de Viajes en Colombia</h2>
               <p className="text-slider">
                 travel es una de las mejores agencias de viajes de Colombia,
@@ -42,12 +42,12 @@ export const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 imagenSlider"
-            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657041135/tour_viajes/Gallery-17_f5hnwt.jpg"
+            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657121074/tour_viajes/vistas-panor_C3_A1micas-los-jardines-de-huertos-campesinos-se-dividen-en-partes-marcadas-trozos-plantas-186355867_sq3x10.jpg"
             alt="Second slide"
           />
 
           <Carousel.Caption>
-            <div className="agencia">
+            <div className="agencia  text1">
               <h2 className="titleslider">DESTINOS QUE TE DAN LA BIENVENIDA</h2>
               <p className="text-slider">
                 Y TE RECIBEN CON LAS PUERTAS ABIERTAS A SUS ESCENARIOS
@@ -69,7 +69,7 @@ export const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 imagenSlider"
-            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657041197/tour_viajes/cache_6273042_ntxlu8.jpg"
+            src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657121187/tour_viajes/campesinos-y-cultivos-de-bayas-vista-panor_C3_A1mica-un-granjero-parado-en-campo-con-una-bolsa-llena-sobre-su-hombro-225288044_nkvwnm.jpg"
             alt="Third slide"
           />
 

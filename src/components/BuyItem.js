@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import "../styles/styleBuyItem.css";
@@ -18,12 +19,13 @@ export const BuyItem = () => {
       showConfirmButton: true,
       timer: 1500,
     });
+
     navigate("/");
   };
 
   return (
     <div>
-      <Container>
+      <Container className="mb-5">
         <h2 className="my-5">Detalle de facturación</h2>
         <hr />
         <Form onSubmit={handleSubmit}>

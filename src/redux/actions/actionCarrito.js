@@ -13,3 +13,10 @@ export const BorrarCarrito = (id) => {
     payload: id,
   };
 };
+
+export const vaciarCarrito = () => {
+  return {
+    type: typeCarrito.vaciar,
+    payload: {},
+  };
+};

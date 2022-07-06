@@ -21,14 +21,16 @@
   border-radius: 20px;
   padding: 3%;
 }
-
+.text1 {
+  margin-bottom: 5%;
+}
 .text-slider {
   font-size: 20px;
   margin-bottom: 10%;
 }
 
-.titleMain{
-    text-align: center;
-    padding: 5% 0;
-    font-size: 35px;
+.titleMain {
+  text-align: center;
+  padding: 5% 0;
+  font-size: 35px;
 }
