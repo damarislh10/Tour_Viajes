@@ -3,7 +3,7 @@ import { listArticlesAsync } from "../redux/actions/actionArticles";
 import { useDispatch, useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import ReactImageMagnify from "react-image-magnify";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { AddCarrito } from "../redux/actions/actionCarrito";
 import Swal from "sweetalert2";
 import "../styles/styleDetalle.css";
@@ -114,15 +114,17 @@ export const Detail = () => {
                 </div>
                 Agregar al carrito
               </button>
-              <button className="btn-car w-100">
-                <div className="container-imgCar ms-1 me-2">
-                  <img
-                    src="https://res.cloudinary.com/df90q7vvj/image/upload/v1646841901/amazonasApp/circled-play_n9mvhu.png"
-                    alt="comprarImg"
-                  />
-                </div>
-                Comprar ahora
-              </button>
+              <Link to="/compra">
+                <button className="btn-car w-100">
+                  <div className="container-imgCar ms-1 me-2">
+                    <img
+                      src="https://res.cloudinary.com/df90q7vvj/image/upload/v1646841901/amazonasApp/circled-play_n9mvhu.png"
+                      alt="comprarImg"
+                    />
+                  </div>
+                  Comprar ahora
+                </button>
+              </Link>
               <p className="stylBlue text-center">Transaciòn segura</p>
             </div>
           </Col>

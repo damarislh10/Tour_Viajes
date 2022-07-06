@@ -27,14 +27,14 @@ export const Home = () => {
                 turismo indígena en Colombia.
               </p>
               <div>
-                <a
+                <Link
                   as={Link}
                   to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
                   NUESTROS DESTINOS TURISTICOS
-                </a>
+                </Link>
               </div>
             </div>
           </Carousel.Caption>
@@ -54,14 +54,14 @@ export const Home = () => {
                 IMPERDIBLES
               </p>
               <div>
-                <a
+                <Link
                   as={Link}
                   to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
                   NUESTROS DESTINOS TURISTICOS
-                </a>
+                </Link>
               </div>
             </div>
           </Carousel.Caption>
@@ -83,14 +83,14 @@ export const Home = () => {
                 ENCONTRARÁS LA MISMA CALIDEZ QUE TE DA LA BIENVENIDA.
               </p>
               <div>
-                <a
+                <Link
                   as={Link}
                   to="/articles"
                   className="destinoBtn"
                   style={{ backgroundColor: "#174a6d", color: "#ffffff" }}
                 >
                   NUESTROS DESTINOS TURISTICOS
-                </a>
+                </Link>
               </div>
             </div>
           </Carousel.Caption>
