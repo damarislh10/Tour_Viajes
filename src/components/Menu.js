@@ -12,9 +12,13 @@ export const Menu = () => {
         <Navbar bg="primary" variant="dark">
           <Container>
             <Col className="col-nav">
-              <Navbar.Brand as={Link} to="/">
-               < img src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657079419/tour_viajes/23d0caf8a327a157db8c70490074e061-removebg-preview_gtjxrk.png"/>
-              </Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">
+            <img
+              style={{ width: "150px" }}
+              src="https://res.cloudinary.com/df90q7vvj/image/upload/v1657079965/tour_viajes/23d0caf8a327a157db8c70490074e061-removebg-preview_gtjxrk_nhi1tk.png"
+              alt="imgamzonas"
+            />
+          </Navbar.Brand>
               <Nav className="me-auto">
                 <Nav.Link as={Link} to="/">
                   Inicio

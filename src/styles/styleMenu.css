@@ -4,6 +4,9 @@
 
 .col-nav{
     display: flex;
+    align-items: center;
+    font-size: 20px;
+
 }
 .misViajes{
     display: flex;

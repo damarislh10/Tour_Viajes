@@ -1,0 +1,34 @@
+.destinoBtn {
+  background-color: #174a6d;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 4%;
+  border-radius: 2em;
+  border: 2px solid #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.titleslider {
+  font-size: 2.5rem;
+}
+
+.agencia {
+  background: #08020282 !important;
+  padding: 20px;
+  margin-bottom: 40%;
+  width: 50%;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.text-slider {
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+
+.titleMain{
+    text-align: center;
+    padding: 5% 0;
+    font-size: 35px;
+}

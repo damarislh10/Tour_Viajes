@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap'
 export const Title = ({text}) => {
   return (
     <Container>
-        <h2>{text}</h2>
+        <h2 className='titleMain'>{text}</h2>
         <ToursContainer/>
     </Container>
   )
