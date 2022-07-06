@@ -8,7 +8,7 @@ import "../styles/styleMenu.css";
 export const Menu = () => {
   return (
     <div>
-      <Row>
+      <Row style={{ width: "99.7vw" }}>
         <Navbar bg="primary" variant="dark">
           <Container>
             <Col className="col-nav">

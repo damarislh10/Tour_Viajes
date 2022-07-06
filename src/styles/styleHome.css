@@ -34,3 +34,24 @@
   padding: 5% 0 1% 0;
   font-size: 35px;
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .destinoBtn {
+    padding: 2%;
+  }
+  .agencia {
+    background: #08020282 !important;
+    padding: 20px;
+    margin-bottom: 40%;
+    width: 80%;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    padding: 3%;
+  }
+  .text1 {
+    margin-bottom: 2%;
+  }
+  .imagenSlider {
+    width: 80px;
+  }
+}

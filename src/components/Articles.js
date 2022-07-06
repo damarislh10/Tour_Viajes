@@ -4,7 +4,7 @@ import "../styles/styleProduct.css";
 
 export const Articles = ({ tour }) => {
   return (
-    <Card className="car-cont mt-5" style={{ width: "23rem" }}>
+    <Card className="car-cont mt-5" style={{ width: "23rem" , height: "27rem" }}>
       <Card.Img className="imgCard" src={tour.imagen} />
       <Card.Body className="body-article">
         <Card.Title className="nombre">{tour.nombre}</Card.Title>
